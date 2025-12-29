@@ -1,7 +1,7 @@
 // filepath: script.js
 // ตัวแปรเก็บตัวเลขลับ
 let secretNumber = 0;
-// ตัวแปรนับจํานวนครั้งที่ทาย
+// ตัวแปรนับจํานวนครั้งที่ทาย.
 let attemptCount = 0;
 // ฟังก์ชันเริ่มเกมใหม่
 function initializeGame() {
@@ -32,7 +32,7 @@ function checkGuess() {
  `;
     return;
   }
-  attemptCount++;
+  attemptCount++; // เพิ่มตรงนี้
   if (guessValue === secretNumber) {
     resultContainer.innerHTML = `
  <div class="alert alert-success" role="alert">
@@ -68,9 +68,9 @@ window.addEventListener("load", initializeGame);
 // ...existing code...
 // ฟังก์ชันเริ่มเกมใหม่
 function resetGame() {
- initializeGame();
- document.getElementById("resultContainer").innerHTML = "";
- document.getElementById("guessInput").value = "";
- document.getElementById("guessInput").focus();
+  initializeGame();
+  document.getElementById("resultContainer").innerHTML = "";
+  document.getElementById("guessInput").value = "";
+  document.getElementById("guessInput").focus();
 }
 // ...existing code...
